@@ -243,13 +243,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.048762634, y: -0, z: -0, w: 0.99881047}
+  m_LocalPosition: {x: 0, y: 0.5700002, z: -4.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1934280033813257366}
+  m_LocalEulerAnglesHint: {x: 5.59, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,6 +935,7 @@ Transform:
   m_Children:
   - {fileID: 148103558}
   - {fileID: 1359053727}
+  - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2237895846713856373
@@ -981,6 +982,7 @@ GameObject:
   - component: {fileID: 8358121110628251985}
   - component: {fileID: 8358121110628251984}
   - component: {fileID: 8358121110628251983}
+  - component: {fileID: 8358121110628251986}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1354,6 +1356,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8358121110628251986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3157935427298865860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc4eba11bf4172f4d84384269b7b7cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTurnAngle: 25
+  handBrake: 5000
+  carBody: {fileID: 8358121110628251985}
+  carHorsePower: 500
+  wc_FrontLeft: {fileID: 639181384}
+  wc_FrontRight: {fileID: 1015849195}
+  wc_BackLeft: {fileID: 1004580465}
+  wc_BackRight: {fileID: 1195195172}
+  nitroBoost: 200
+  nitroDuration: 3
+  nitroCooldown: 5
+  jumpForce: 6000
 --- !u!1 &8424936368432277254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,7 +1420,6 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 1865206795}
   - {fileID: 1934280033813257366}
